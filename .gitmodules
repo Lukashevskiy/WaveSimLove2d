@@ -1,3 +1,6 @@
 [submodule "lib/30log"]
 	path = lib/30log
 	url = git@github.com:Yonaba/30log.git
+[submodule "lib/lua-esc"]
+	path = lib/lua-esc
+	url = git@github.com:nidorx/ecs-lua.git

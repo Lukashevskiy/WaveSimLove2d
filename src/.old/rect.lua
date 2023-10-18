@@ -1,5 +1,5 @@
 local class     = require('lib.30log/30log')
-local Position  = require("src.position")
+local Position  = require("src.old.position")
 
 --- @class Rect
 --- @field position Position
