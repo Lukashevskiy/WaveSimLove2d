@@ -1,25 +1,29 @@
-local class = require('lib.30log/30log')
-local Position = require("src.position")
+local class     = require('lib.30log/30log')
+local Position  = require("src.position")
 
 --- @class Rect
 --- @field position Position
---- @field width integer
---- @field height integer
+--- @field width    integer
+--- @field height   integer
 local Rect = class("Rect")
-Rect.height = 0
-Rect.width = 0
-Rect.position = Position(0, 0)
+      Rect.height   = 0
+      Rect.width    = 0
+      Rect.position = Position(0, 0)
 
+
+--- @param position Position
+--- @param width    integer
+--- @param height   integer
 function Rect:init(position, width, height)
     self.position = position
-    self.width = width
-    self.height = height
+    self.width    = width
+    self.height   = height
 end
 
 
 
 function Rect:draw(time, func_array)
-    local width = self.width
+    local width  = self.width
     local height = self.height
     for x = 0, width, 8 do
         local y = 0
