@@ -1,5 +1,10 @@
 local class = require("lib.30log/30log")
 
+--- @class Func
+--- @field angle    integer
+--- @field aplitude integer
+--- @field velocity integer
+--- @field fun      function
 local Func = class("Func")
       Func.angle    = 2
       Func.aplitude = 20

@@ -3,7 +3,7 @@ local Position = require("src.position")
 local Func     = require('src.func')
 
 function love.load()
-    Width = love.graphics.getWidth()
+    Width  = love.graphics.getWidth()
     Height = love.graphics.getHeight()
 
     Rect1 = Rect(
