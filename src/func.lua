@@ -1,4 +1,4 @@
-local class = require("lib.30log")
+local class = require("lib.30log/30log")
 
 local Func = class("Func")
 Func.angle = 2

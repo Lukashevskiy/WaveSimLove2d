@@ -1,4 +1,4 @@
-local class = require('lib.30log')
+local class = require('lib.30log/30log')
 local Position = require("src.position")
 
 --- @class Rect

@@ -1,4 +1,6 @@
-local Rect, Position, Func = require("src.rect"), require("src.position"), require('src.func')
+local Rect =  require("src.rect")
+local Position = require("src.position")
+local Func = require('src.func')
 
 function love.load()
     Width = love.graphics.getWidth()
