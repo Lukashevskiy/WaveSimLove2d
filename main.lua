@@ -13,7 +13,7 @@ function love.load()
     )
 
     Rect2 = Rect(
-        Position(100, 400),
+        Position(0, 0),
         600,
         300
     )
@@ -25,44 +25,53 @@ function love.load()
     Funcs1 = {
         Func(
             20,
-            0.0001,
+            0.001,
             0,
-            math.sin
-        ),
+            function (self, time, position)
+                return self.aplitude * math.sqrt((self.angle + position.x / 240) * 4)
+            end),
         Func(
             20,
-            0.00005,
+            0.005,
             20,
-            math.cos
-        )
+            function (self, time, position)
+                return self.aplitude * math.sqrt((self.angle + position.x / 240) * 4)
+            end)
     }
     Funcs2 = {
         Func(
             5,
-            0.0001,
+            0.001,
             35,
-            math.sin
+            function (self, time, position)
+                return self.aplitude * math.sqrt((self.angle + position.x / 240) * 4)
+            end
         ),
         Func(
             0,
-            0.0001,
+            0.001,
             20,
-            math.cos
+            function (self, time, position)
+                return self.aplitude * math.sqrt((self.angle + position.x / 240) * 4)
+            end
         )
     }
     Funcs3 = {
         Func(
             45,
-            0.0001,
+            0.001,
             100,
-            math.sin
+            function (self, time, position)
+                return self.aplitude * math.sqrt((self.angle + position.x / 240) * 4)
+            end
         ),
         Func(
             100,
-            0.0001,
+            0.001,
             100,
-            math.cos
-        )
+            function (self, time, position)
+                return self.aplitude * math.sqrt((self.angle + position.x / 240) * 4)
+            end        )
     }
     Frames = 0
 end

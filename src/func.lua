@@ -28,7 +28,7 @@ end
 --- @param position Position start position (x, y)
 --- @return number  integer calculated value of func 
 function Func:__call(time, position)
-    return self.aplitude * math.sin((self.angle + position.x / 240) * 4)
+    return self:fun(time, position)
 end
 
 return Func
